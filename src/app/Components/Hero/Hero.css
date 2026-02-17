@@ -57,7 +57,27 @@
     font-weight: bold;
     font-size: 2rem;
   }
-
+  .whatsapp {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .whatsapp > svg {
+    color: green;
+    font-size: 3rem;
+  }
+  .whatsapp > p {
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    border-left: 2px solid green;
+    padding: 1px 20px 1px 10px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    margin-right: -9px;
+  }
   @media (max-width: 768px) {
     height: 100svh;
 

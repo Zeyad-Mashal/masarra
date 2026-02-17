@@ -2,6 +2,8 @@
 
 import React, { useEffect, useRef } from "react";
 import "./Hero.css";
+import { PiWhatsappLogoLight } from "react-icons/pi";
+
 const Hero = () => {
   const videoRef = useRef(null);
 
@@ -49,6 +51,10 @@ const Hero = () => {
           Meetings that move people. <br /> Incentives that spark connection.{" "}
           <br /> Events that leave a mark.
         </p>
+      </div>
+      <div className="whatsapp">
+        <p>Get In Touch</p>
+        <PiWhatsappLogoLight />
       </div>
     </div>
   );
