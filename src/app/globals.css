@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --container-max: 1380px;
+  --container-gutter: 34px;
 }
 
 @theme inline {
@@ -23,4 +25,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Utility container for very large screens */
+.container {
+  width: min(100% - (var(--container-gutter) * 2), var(--container-max));
+  margin-inline: auto;
 }
