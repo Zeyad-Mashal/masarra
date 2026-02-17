@@ -1,4 +1,5 @@
 import Hero from "./Components/Hero/Hero";
+import OurServices from "./Components/OurServices/OurServices";
 import WhyMasarra from "./Components/WhyMasarra/WhyMasarra";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="app">
       <Hero />
       <WhyMasarra />
+      <OurServices />
     </div>
   );
 }

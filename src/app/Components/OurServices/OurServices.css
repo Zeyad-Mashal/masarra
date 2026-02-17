@@ -1,0 +1,105 @@
+.OurServices {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url("/images/image3.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.78);
+  position: absolute;
+  z-index: 2;
+}
+.OurServices > h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  z-index: 3;
+}
+.OurServices > p {
+  font-size: 2.5rem;
+  z-index: 3;
+}
+.OurServices_list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  z-index: 3;
+  padding: 3rem;
+}
+.OurServices_item {
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* glass effect */
+  background: rgba(255, 255, 255, 0.12); /* شفافية */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Safari */
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 18px;
+
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    inset 0 0 10px rgba(255, 255, 255, 0.15);
+
+  padding: 20px;
+  cursor: pointer;
+}
+.OurServices_item > svg {
+  font-size: 2rem;
+}
+.OurServices_item > span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.OurServices_item > p {
+  font-size: 1rem;
+}
+.OurServices_item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 789px) {
+  .OurServices > h1 {
+    font-size: 1.6rem;
+  }
+  .OurServices > p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .OurServices_list {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0;
+  }
+  .OurServices_item {
+    width: 45%;
+    padding: 10px;
+    height: 70px;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .OurServices_list {
+    width: min(100% - (var(--container-gutter) * 2), var(--container-max));
+    padding: 2rem 6rem;
+  }
+  .OurServices_item {
+    width: 30%;
+  }
+}
