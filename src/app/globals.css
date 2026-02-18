@@ -29,7 +29,7 @@ body {
 }
 
 /* Full-page scroll snap: سكرول بسيط يثبت على السكشن التالي/السابق */
-.app_scroll_wrapper {
+/* .app_scroll_wrapper {
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -42,7 +42,7 @@ body {
   scroll-snap-stop: always;
   min-height: 100vh;
   box-sizing: border-box;
-}
+} */
 
 /* Utility container for very large screens */
 .container {
