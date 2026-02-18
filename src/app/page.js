@@ -1,5 +1,6 @@
 import Hero from "./Components/Hero/Hero";
 import OurServices from "./Components/OurServices/OurServices";
+import SliderSection from "./Components/SliderSection/SliderSection";
 import WhyMasarra from "./Components/WhyMasarra/WhyMasarra";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <WhyMasarra />
       <OurServices />
+      <SliderSection />
     </div>
   );
 }

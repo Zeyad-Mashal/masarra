@@ -11,6 +11,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
 }
 .overlay {
   width: 100%;
@@ -58,6 +60,7 @@
 
   padding: 20px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 .OurServices_item > svg {
   font-size: 2rem;
