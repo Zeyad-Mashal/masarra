@@ -1,0 +1,222 @@
+/* ===== Contact Section - مطابق للصورة ===== */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+.Contact {
+  width: 100%;
+  background-color: #3d2358;
+  color: #e0e0e0;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+}
+
+.contact_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* ---- Left: عنوان + بيانات الاتصال ---- */
+.contact_left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact_left h1 {
+  margin: 0;
+  font-family: inherit;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #e0e0e0;
+  line-height: 1.1;
+}
+
+.contact_heading_line {
+  display: block;
+}
+
+.contact_details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact_details a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: opacity 0.2s;
+}
+
+.contact_details a:hover {
+  opacity: 0.9;
+}
+
+/* ---- Right: الفورم ---- */
+.contact_right {
+  width: 100%;
+}
+
+.contact_form_title {
+  margin: 0 0 1.75rem;
+  font-family: "Dancing Script", "Segoe Script", cursive;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  font-weight: 400;
+  color: #a4b6d8;
+  font-style: normal;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact_form_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.contact_label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.contact_label_full {
+  grid-column: 1 / -1;
+}
+
+.contact_input,
+.contact_select,
+.contact_textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #e0e0e0;
+  background-color: #6c63ac;
+  border: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  outline: none;
+  transition: background 0.2s;
+}
+
+.contact_input::placeholder,
+.contact_textarea::placeholder {
+  color: #a7a3b7;
+}
+
+.contact_select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a7a3b7' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.25rem;
+  cursor: pointer;
+}
+
+.contact_select option {
+  background: #6c63ac;
+  color: #e0e0e0;
+}
+
+.contact_select option[value=""] {
+  color: #a7a3b7;
+}
+
+.contact_textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* هاتف: +971 ▼ + حقل */
+.contact_phone_wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #6c63ac;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.contact_phone_prefix {
+  padding: 0 1rem;
+  font-size: 0.95rem;
+  color: #a7a3b7;
+  white-space: nowrap;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contact_input_phone {
+  flex: 1;
+  background: transparent !important;
+  border: none;
+  padding-left: 0.5rem;
+}
+
+.contact_submit {
+  margin-top: 0.5rem;
+  padding: 0.9rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  align-self: flex-start;
+}
+
+.contact_submit:hover {
+  background: #fff;
+  color: #3d2358;
+}
+
+/* ---- موبايل ---- */
+@media screen and (max-width: 789px) {
+  .Contact {
+    padding: 2.5rem 1rem;
+  }
+
+  .contact_container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact_left h1 {
+    font-size: 2.25rem;
+  }
+
+  .contact_form_row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact_form_title {
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* ---- شاشات كبيرة ---- */
+@media screen and (min-width: 1200px) {
+  .contact_container {
+    max-width: min(
+      100% - (var(--container-gutter) * 2),
+      var(--container-max, 1280px)
+    );
+  }
+}

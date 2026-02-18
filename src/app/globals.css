@@ -28,6 +28,22 @@ body {
   margin: 0;
 }
 
+/* Full-page scroll snap: سكرول بسيط يثبت على السكشن التالي/السابق */
+.app_scroll_wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.app_scroll_wrapper > * {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
 /* Utility container for very large screens */
 .container {
   width: min(100% - (var(--container-gutter) * 2), var(--container-max));

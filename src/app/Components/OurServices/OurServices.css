@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
 .OurServices {
   width: 100%;
   height: 100vh;
@@ -29,6 +31,9 @@
 .OurServices > p {
   font-size: 2.5rem;
   z-index: 3;
+  font-family: "Dancing Script", "Segoe Script", cursive;
+  color: rgb(228, 104, 59);
+  font-weight: bold;
 }
 .OurServices_list {
   width: 100%;
