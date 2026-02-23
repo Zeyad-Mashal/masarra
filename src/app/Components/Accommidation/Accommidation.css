@@ -76,6 +76,44 @@
   border-radius: 16px;
 }
 
+/* ── Clickable accommodation card ── */
+.accommidation_clickable {
+  cursor: pointer;
+  position: relative;
+}
+
+.accommidation_overlay_hint {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  border-radius: 4px;
+}
+
+.accommidation_overlay_hint span {
+  color: rgba(255, 255, 255, 0);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0);
+  padding: 10px 24px;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+.accommidation_clickable:hover .accommidation_overlay_hint {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.accommidation_clickable:hover .accommidation_overlay_hint span {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
 /* موبايل */
 @media screen and (max-width: 789px) {
   .Accommidation {
