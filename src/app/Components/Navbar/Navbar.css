@@ -73,7 +73,9 @@
 .navbar__toggle.is-open .navbar__toggleLine:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
-
+.logo {
+  margin-bottom: 10px;
+}
 @media (max-width: 768px) {
   .navbar {
     width: calc(100% - 2rem);

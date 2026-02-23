@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
+import Image from "next/image";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,7 +27,7 @@ const Navbar = () => {
         <li onClick={() => setIsOpen(false)}>CONTACT US</li>
       </ul>
       <div className="logo">
-        <p>logo</p>
+        <Image src="/images/logo.png" alt="logo" width={80} height={80} />
       </div>
 
       <button

@@ -15,7 +15,7 @@ export const metadata = {
   title: "Massara",
   description: "Massara is a platform airport",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/images/logoicon.png",
   },
 };
 
